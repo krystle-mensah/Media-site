@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<!--css style sheet-->
+	<link rel="stylesheet" href="css/style.css">
+	<!--fontawesome-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <title>Media | Site</title>
+
+  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="container nav-bar">  
+	<!-- Hamburer-Menu -->
+	<span id="open-slide"> 
+	  <a href="#" onClick="openSlideMenu()">  
+		<svg width="30" height="30"> 
+		  <path d="M0,5,30,5" stroke="#000" stroke-width="5"/>
+		  <path d="M0,14,30,14" stroke="#000" stroke-width="5"/>
+		  <path d="M0,23,30,23" stroke="#000" stroke-width="5"/>
+		</svg> <!-- Hamburger-menu -->
+	  </a> <!-- link onclick event -->
+	</span> <!-- #open-slide -->
+	
+	<!-- branding section -->
+	<section id="branding">
+	  <img id="logo-img" src="img/big-mouth-logo.png" alt="logo-big-mouth.png">
+	</section> <!-- #branding -->
+	<!-- nav-list section -->
+	<ul id="navber-list">
+	  <li>
+		<a href="#showcase">home</a>
+	  </li>
+	  <li>
+		<a href="#about">about</a>
+	  </li>
+	  <li>
+		<a href="#crew" target="_blank">crew</a>
+		</li>
+		<li>
+			<a href="#social-media" target="_blank">social</a>
+		</li>
+	</ul> <!-- #navber-list -->
+
+	<!--  mobile nav  -->
+  
+	<section id="side-menu" class="mobile-nav">  
+	  <a href="#" class="btn-close" onClick="closeSlideMenu()">&times;</a>
+	  <a href="#showcase">home</a>
+	  <a href="#about">about</a>
+	  <a href="#crew">crew</a>
+	  <!-- i need data-total and data-count when add to cart is clicked --> 
+	  
+	</section> <!-- #side-menu -->
+  </nav>
+  
+  <!--  Showcase  -->
+  <section id="showcase">
+		<div class="container"> 
+			<div id="showcase-image"> 
+			<img src="img/pexels-photo-1350613.jpeg" alt="">
+			</div> <!-- showcase-image -->
+		</div> <!-- container -->
+  </section>
+
+  <section id="crew"> 
+	<div class="container">
+		
+		<h1 class="page-title">Crew</h1>
+		
+		<div class="row"> 
+			<div class="box">
+				<img src="img/David.jpeg" alt=""> 
+				<h4>David</h4>
+				<p>Editor and partime volunteer</p>
+			</div> <!-- /.box -->
+			<div class="box">
+				<img src="img/light-skin-chick.jpeg" alt=""> 
+				<h4>Simone</h4>
+				<p>Big Mouth Manager!</p>
+			</div> <!-- /.box -->  
+			<div class="box">
+				<img src="img/pexels-photo-1191488.jpeg" alt="">  
+				<h4>Denise</h4>
+				<p>Social media assistant!</p>
+			</div> <!-- /.box --> 
+			<div class="box">
+				<img src="img/pexels-photo-428333.jpeg" alt="">   
+				<h4>Tyrone</h4>
+				<p>Film Director and all round cool guy</p>
+			</div> <!-- /.box -->
+	  </div> <!-- /.row --> 
+	</div> <!-- container -->
+  </section> <!-- #crew -->
+  
+  <section id="about"> 
+	<div class="container">
+	  
+	  <article id="main-col"> 
+		<h1 id="about-title">About us</h1>
+		
+		  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quam quo exercitationem totam quibusdam ab aliquid, quasi vero perferendis assumenda!</p>
+		  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, neque?Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, dicta!</p>
+	   
+	  </article><!-- main-col -->
+	  
+	  <aside id="sidebar"> 
+		
+		<h2>What we do</h2>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, possimus?</p>
+		
+	  </aside>
+	</div> <!-- /.container -->
+  </section> <!-- #about -->
+  
+  <!-- Socials media -->
+  <section id="social-media"> 
+		<div class="container "> 
+		
+			<div class="inner-social-container"> 
+				<h1 class="page-title">Connect</h1>
+
+				<ul class="accordion">
+					
+					<li class="tab">
+						<div class="social youtube">
+							<a href="https://youtube.com/traversymedia" target="_blank">Youtube</a>
+						</div>
+						<div class="content">
+							<h1>YouTube</h1>
+							<p>Watch us on YouTube</p>
+						</div>
+					</li>
+					<!-- twitter -->
+					<li class="tab">
+						<div class="social twitter">
+							<a href="https://twitter.com/traversymedia" target="_blank">Twitter</a>
+						</div>
+						<div class="content">
+							<h1>Twitter</h1>
+							<p>Follow us on Twitter for updates.</p>
+						</div>
+					</li>
+					<!-- facebook -->
+					<li class="tab">
+						<div class="social facebook">
+							<a href="https://facebook.com/traversymedia" target="_blank">Facebook</a>
+						</div>
+						<div class="content">
+							<h1>Facebook</h1>
+							<p>Follow us on Facebook and get notified of new videos, publications, etc</p>
+						</div>
+					</li>
+					<!-- instagram -->
+					<li class="tab">
+						<div class="social instagram">
+							<a href="http://instagram.com/traversymedia" target="_blank">Instagram</a>
+						</div>
+						<div class="content">
+							<h1>Instagram</h1>
+							<p>Follow us on Instragram for a more personal look into our life and work</p>
+						</div>
+					</li>
+
+				</ul> <!-- /.accordion -->
+			
+			</div> <!-- /.inner-social-container -->
+
+		</div> <!-- /.container -->
+  </section> <!-- #social-media -->
+
+
+  <footer> 
+		<p>Big Mouth, Copyright &copy; 2019</p>
+  </footer>
+ 
+  
+  
+  <!-- Jquery -->
+  <script
+	src="https://code.jquery.com/jquery-3.3.1.js"
+	integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous">
+  </script>
+  <!-- Javascript -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
